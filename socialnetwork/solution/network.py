@@ -15,7 +15,9 @@ class Queue():
         self._q.append(item)
 
     def dequeue(self):
-        """ we don't raise Exception here, IndexError will be raised by list """
+        """ we don't raise Exception here, 
+            IndexError will be raised by list if empty
+        """
         return self._q.pop(0)
 
     def empty(self):
@@ -68,6 +70,9 @@ class Network():
 
 
     def __str__(self):
+        """ print object in format 'id: ajd0,adj1,adj2...'
+            where id, adj0, adj1,..djn are numbers
+        """
         return '\n'.join(['{}: {}'.format(
             person, ','.join(map(str, adj)))
             for person, adj in enumerate(self.adjacency_list)])
