@@ -10,8 +10,11 @@ US UTRC interview - Social Network
     *  python main.py count - get total number of people 
     *  python main.py A B   - get distance between A and B 
     *  example:
+       > python main.py count
+       > 82168
+       > 
        > python main.py STACEY_STRIMPLE RICH_OMLI
-       > output: 5
+       > 5
     
 ### Algorithm: <br />
     1.  represent the social network with graph (undirected in this case); 
